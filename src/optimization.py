@@ -10,8 +10,7 @@ def get_loss():
     """
 
     # YOUR CODE HERE: select a loss appropriate for classification
-    if torch.cuda.is_available():
-        loss  = nn.CrossEntropyLoss()
+    loss  = nn.CrossEntropyLoss()
     return loss
 
 

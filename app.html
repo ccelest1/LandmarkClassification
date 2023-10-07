@@ -7518,12 +7518,26 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d838a687-8381-43cc-85e5-28f3f602466b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a6077709">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">FileUpload</span><span class="p">,</span> <span class="n">Output</span><span class="p">,</span> <span class="n">Label</span>
@@ -7610,7 +7624,7 @@ a.anchor-link {
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[3], line 11</span>
+Cell <span class="ansi-green-fg">In[2], line 11</span>
 <span class="ansi-green-intense-fg ansi-bold">      8</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">torch</span>
 <span class="ansi-green-intense-fg ansi-bold">     10</span> <span style="color: rgb(95,135,135)"># Decide which model you want to use among the ones exported</span>
 <span class="ansi-green-fg">---&gt; 11</span> learn_inf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">torch</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jit</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">load</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">checkpoints/original_exported.pt</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
@@ -7690,16 +7704,59 @@ Serialized   File "code/__torch__/torchvision/transforms/transforms.py", line 12
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5e23fea9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e23fea9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>python<span class="w"> </span>src/create_submit_pkg.py
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>executing: jupyter nbconvert --to html transfer_learning.ipynb
+[NbConvertApp] Converting notebook transfer_learning.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 1 image(s).
+[NbConvertApp] Writing 328321 bytes to transfer_learning.html
+executing: jupyter nbconvert --to html app.ipynb
+[NbConvertApp] Converting notebook app.ipynb to html
+[NbConvertApp] Writing 289477 bytes to app.html
+executing: jupyter nbconvert --to html cnn_from_scratch.ipynb
+[NbConvertApp] Converting notebook cnn_from_scratch.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
+[NbConvertApp] Writing 1517080 bytes to cnn_from_scratch.html
+Adding files to submission_2023-10-05T19h35m.tar.gz
+src/model.py
+src/transfer.py
+src/helpers.py
+src/optimization.py
+src/data.py
+src/train.py
+src/predictor.py
+src/__init__.py
+src/create_submit_pkg.py
+transfer_learning.ipynb
+app.ipynb
+cnn_from_scratch.ipynb
+app.html
+cnn_from_scratch.html
+transfer_learning.html
+
+----------------------------------------------------------------
+Done. Please submit the file submission_2023-10-05T19h35m.tar.gz
+----------------------------------------------------------------
+</pre>
 </div>
 </div>
 </div>
